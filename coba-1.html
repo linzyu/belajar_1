@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./coba-1.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <div class="header-1">
+        <header>
+            <div class="menu-2">
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <div class="img-1">
+                    <a href=""><img class="dog" src="./img/dog-pawprints.svg" alt=""></a>
+                    <a href=""><img class="dog" src="./img/instagram-logo.svg" alt=""></a>
+                    <a href=""><img class="dog" src="./img/user-avatar-main-picture.svg" alt=""></a>
+                </div>
+                <div class="right">
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                </div>
+        </header>
+    </div>
+    <main>
+        <div class="header-2"></div>
+        <div class="center-conten-1 ">
+            <div class="center-conten-2">
+                <div class=malasngoding-slider>
+                    <div class=isi-slider>
+                        <img class="mySlides" src="http://elemisdesign.com/demos/resume/images/1.jpg" style="width:100%"
+                            alt=" Gambar 1">
+                        <img class="mySlides" src="http://elemisdesign.com/demos/resume/images/2.jpg" style="width:100%"
+                            alt=" Gambar 2">
+                        <img class="mySlides" src="http://elemisdesign.com/demos/resume/images/2.jpg" style="width:100%"
+                            alt=" Gambar 2">
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid-conten-1"></div>
+        <div class="text-1">
+            <a href="">Micrology Template comes with custom homepage sections and content blocks. Build your own website
+                today.</a>
+        </div>
+        <div class="mid-conten-2">
+            <div class="mid-conten-3">
+                <div class="mid-conten-4">
+                    <div class="mid-isi-conten-3">
+                        <div class="img-isi-1">
+                            <img src="http://elemisdesign.com/demos/resume/images/2.jpg" alt="">
+                        </div>
+                        <div class="text-isi-1">
+                            <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate!</a>
+                        </div>
+                        <div class="submit">
+                            <button class="btn success">
+                                submit
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mid-isi-conten-3">
+                        <div class="img-isi-1">
+                            <img src="http://elemisdesign.com/demos/resume/images/2.jpg" alt="">
+                        </div>
+                        <div class="text-isi-1">
+                            <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate!</a>
+                        </div>
+                        <div class="submit">
+                            <button class="btn info">
+                                submit
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mid-isi-conten-3">
+                        <div class="img-isi-1">
+                            <img src="http://elemisdesign.com/demos/resume/images/1.jpg" alt="">
+                        </div>
+                        <div class="text-isi-1">
+                            <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate!</a>
+                        </div>
+                        <div class="submit">
+                            <button class="btn warning">
+                                submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid-conten-5">
+
+        </div>
+    </main>
+</body>
+
+</html>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 8000); // Change image every 2 seconds
+    }
+</script>

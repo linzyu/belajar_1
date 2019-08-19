@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-1 {
+    width: 100%;
+}
+
+/*  */
+.menu-2 {
+    /* border: 1px solid green; */
+    overflow: hidden;
+    background-color: #8B4F3E;
+
+}
+
+.menu-2 a {
+    /* border: 1px solid green; */
+    width: 80px;
+    height: 50px;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.right {
+    width: 180vh;
+}
+
+.right a {
+    float: right;
+    padding: 14px 16px;
+    /* border: 1px solid green; */
+}
+
+.img-1 {
+    /* border: 1px solid green; */
+    width: 200vh;
+}
+
+.img-1 a {
+    /* border: 1px solid green; */
+    margin: 0px 5px;
+    width: 80px;
+}
+
+.img-1 a,img {
+    float: right;
+ 
+}
+
+.img-1 .dog {
+    /* border: 1px solid green; */
+    width: 40px;
+    height: 30px;
+    margin-top: -5px;
+}
+
+.menu-2 a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/*  */
+
+.header-2 {
+    /* border: 1px solid black; */
+    background-image: url("/img/trevor-mckinnon-gxDdSqomSb0-unsplash.jpg");
+    background-color: #8B4F3E;
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: 100%;
+}
+
+.center-conten-1 {
+    /* border: 1px solid green; */
+    padding: 100px auto;
+    height: 90%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.center-conten-2 {
+    /* border: 1px solid yellow; */
+    margin-top: -600px;
+    height: 80%;
+    width: auto;
+    
+}
+
+/*  */
+
+.malasngoding-slider { 
+	/* border: 10px solid #efefef;  */
+	position: relative; 
+	overflow: hidden; 
+    background: #efefef;
+    border-radius: 1%;
+    opacity: 0.8;
+}
+ 
+.malasngoding-slider { 
+	margin:20px auto;
+	width: 100%;
+	height: 450px; 
+}
+ 
+.isi-slider img { 
+	width: 768px;
+	height: 450px; 
+    float: left;
+}
+
+/*  */
+
+.mid-conten-1{
+    display: block;
+    margin-top: 110px;
+    height: 70px;
+    /* border: 1px solid red; */
+    animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+    /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 50s; /* Chrome and Safari */
+}
+@keyframes colorchange
+{
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: red;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: red;}
+}
+
+.text-1 {
+    margin-left: 390px;
+    margin-top: -50px;
+    width: 2000px;
+    /* border: 1px solid blue; */
+}
+.text-1 a{
+    width: 1000px;
+    height: 1000px;
+    text-decoration: none;
+    color:black;
+}
+
+/*  */
+
+.mid-conten-2{
+    margin-top: 27px;
+    /* border: 1px solid green; */
+    height: 500px;
+}
+
+.mid-conten-3{
+    margin-top: 30px;
+    /* border: 1px solid green; */
+    padding: 100px auto;
+    /* height: 90%;
+     width: 60%; */
+    height: 450px;
+    width: 1140px;
+    margin-left: 16%;
+}
+
+.mid-conten-4 {
+    display: flex;
+    /* background-color: DodgerBlue; */
+    /* border: 1px solid black; */
+    height: 425px;
+    width: 1270px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+.mid-isi-conten-3{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    /* font-size: 30px; */
+}
+.img-isi-1{
+    /* border: 1px solid green; */
+    /* padding: 100px; */
+    margin-top: -10px;
+    margin-left: -10px;
+    background-color: #8B4F3E;
+    height: 280px;
+    width: 400px;
+}
+
+.img-isi-1 img{
+    height: 280px;
+    width: 400px;
+}
+
+.text-isi-1{
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.text-isi-1 a{
+    text-decoration: none;
+}
+
+.submit{
+    margin-top: 10px;
+}
+.btn{
+    margin-left: 130px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.success {
+    border-color: #4CAF50;
+    color: green;
+  }
+
+  .success:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Blue */
+  .info {
+    border-color: #2196F3;
+    color: dodgerblue;
+  }
+  
+  .info:hover {
+    background: #2196F3;
+    color: white;
+  }
+  
+  /* Orange */
+  .warning {
+    border-color: #ff9800;
+    color: orange;
+  }
+  
+  .warning:hover {
+    background: #ff9800;
+    color: white;
+  }
+  
+  /* Red */
+  .danger {
+    border-color: #f44336;
+    color: red;
+  }
+  
+  .danger:hover {
+    background: #f44336;
+    color: white;
+  }
+  /*  */
+
+  .mid-conten-5{
+    margin-top: 1px;
+    /* border: 1px solid green; */
+    background-color: #ddd;
+    height: 700px;
+  }
